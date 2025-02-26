@@ -5,7 +5,7 @@ description = "Default template for PDM package"
 authors = [
     {name = "Jamie Forth", email = "j.forth@gold.ac.uk"},
 ]
-dependencies = ["pylsltools @ git+http://github.com/jamieforth/pylsl-tools.git", "pyxdftools @ git+http://github.com/jamieforth/pyxdf-tools.git"]
+dependencies = ["pylsltools @ git+http://github.com/jamieforth/pylsl-tools.git", "pyxdftools @ git+http://github.com/jamieforth/pyxdf-tools.git", "scipy>=1.15.2"]
 requires-python = ">=3.11"
 readme = "README.md"
 license = {text = "AGPL-3.0-or-later"}

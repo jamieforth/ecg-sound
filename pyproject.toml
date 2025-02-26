@@ -1,0 +1,21 @@
+[project]
+name = "ecg-sound"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Jamie Forth", email = "j.forth@gold.ac.uk"},
+]
+dependencies = ["pylsltools @ git+http://github.com/jamieforth/pylsl-tools.git", "pyxdftools @ git+http://github.com/jamieforth/pyxdf-tools.git"]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "AGPL-3.0-or-later"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project.scripts]
+lsl-ecg-sound = "ecg_sound.lsl_ecg_sound:main"
+
+[tool.pdm]
+distribution = true
